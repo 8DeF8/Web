@@ -38,11 +38,9 @@ public class CallbackTest {
     }
 
     @Test
-    public void testCardOrderForm() {
-        // driver.get("http://localhost:9999");
-
+    public void CallbackTest() {
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Петровский Петр Петрович");
-        driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+78005555555");
+        driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+99999999999");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.cssSelector("button.button")).click();
         var actualText = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
